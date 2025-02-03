@@ -119,7 +119,7 @@ const Dashboard = () => {
 
             {/* Charts - now in 2-column layout within the remaining space */}
             <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-0">
-              <PieChart />
+              {/* <PieChart /> */}
               <LineChart />
             </div>
           </div>

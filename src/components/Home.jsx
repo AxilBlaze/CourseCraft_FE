@@ -4,15 +4,15 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-700 to-black text-white flex flex-col items-center justify-center p-6 relative">
       {/* Navigation Bar */}
-      <nav className="absolute top-5 right-10 flex space-x-6 text-gray-300 text-lg font-bold">
+      <nav className="absolute top-5 right-10 flex space-x-6 text-gray-300 text-lg font-bold z-50">
         {[
           { name: "Dashboard", path: "/dashboard" },
           { name: "AI tutor", path: "/AITutor" },
           { name: "Learning Path", path: "/LearningPath" },
-          { name: "Performance Analytics", path: "/analytics" },
           
         ].map((item) => (
           <NavLink
+            onClick={()=>{console.log("clicked")}}
             key={item.name}
             to={item.path}
             className="hover:text-white transition transform hover:-translate-y-1 hover:scale-105 px-3 py-1 rounded"
@@ -84,23 +84,6 @@ const Home = () => {
       </div>
 
       {/* Avatar Icons */}
-      <div className="flex mt-6 space-x-4 relative z-10">
-        <img
-          src="https://via.placeholder.com/40"
-          alt="avatar"
-          className="rounded-full"
-        />
-        <img
-          src="https://via.placeholder.com/40"
-          alt="avatar"
-          className="rounded-full"
-        />
-        <img
-          src="https://via.placeholder.com/40"
-          alt="avatar"
-          className="rounded-full"
-        />
-      </div>
     </div>
 
      
