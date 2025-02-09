@@ -3,16 +3,20 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "@next_public_api_url"
+    "VITE_API_URL": "@vite_api_url"
   }
 } 
