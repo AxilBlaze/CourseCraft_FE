@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import FlipBook from "react-pageflip"; 
 import dashboard from "../assets/dashboard.png";
 import aiTutor from "../assets/aiTutor.png";
-import LearningPath from "../assets/learningpath.png";
+import LearningPath from "../assets/LearningPath.png";
 import courseCraftLogo from "../assets/CourseCraft.webp"; // Import the logo
 
 const Home = () => {
